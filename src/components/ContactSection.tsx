@@ -11,6 +11,11 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`Inquiry from ${form.name} - ${form.company || "Individual"}`);
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\nCompany: ${form.company}\n\nMessage:\n${form.message}`
+    );
+    window.location.href = `mailto:info@bengalweft.com?subject=${subject}&body=${body}`;
     setSent(true);
     setForm({ name: "", email: "", company: "", message: "" });
     setTimeout(() => setSent(false), 5000);
@@ -45,7 +50,7 @@ const ContactSection = () => {
                   {
                     icon: MapPin,
                     label: "Address",
-                    value: "B9, Sketch Meher Bhavan, Chandgaon, Chittagong, Bangladesh",
+                    value: "1284, Askarabad, Mistripada, Dewanhut, Chittagong",
                   },
                   {
                     icon: Mail,
@@ -55,7 +60,7 @@ const ContactSection = () => {
                   {
                     icon: Phone,
                     label: "Phone",
-                    value: "+012 345 67890",
+                    value: "+8801302185808",
                   },
                   {
                     icon: Clock,
