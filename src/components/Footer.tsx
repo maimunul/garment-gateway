@@ -52,7 +52,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={14} className="text-gold flex-shrink-0 mt-1" />
                 <span className="text-white/55 font-body text-xs leading-relaxed">
-                  B9, Sketch Meher Bhavan, Chandgaon, Chittagong, Bangladesh
+                  1284, Askarabad, Mistripada, Dewanhut, Chittagong, Bangladesh.
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={14} className="text-gold flex-shrink-0" />
-                <span className="text-white/55 font-body text-xs">+012 345 67890</span>
+                <span className="text-white/55 font-body text-xs">+8801302185808</span>
               </li>
             </ul>
           </div>
@@ -72,7 +72,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-white/35 font-body text-xs">
-            © 2024 BengalWeft. All rights reserved.
+            © 2026 BengalWeft. All rights reserved.
           </p>
           <p className="text-white/35 font-body text-xs">
             www.bengalweft.com

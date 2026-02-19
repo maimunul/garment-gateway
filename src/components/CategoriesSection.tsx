@@ -2,15 +2,24 @@ import React, { useState } from "react";
 import { X, ChevronLeft, ChevronRight, Images } from "lucide-react";
 
 // Import carousel images to reuse as gallery photos for each category
-import carousel1 from "@/assets/carousel-1.jpg";
-import carousel2 from "@/assets/carousel-2.jpg";
-import carousel3 from "@/assets/carousel-3.jpg";
-import service1 from "@/assets/service-1.jpeg";
-import service2 from "@/assets/service-2.jpeg";
-import service3 from "@/assets/service-3.jpeg";
-import service4 from "@/assets/service-4.jpeg";
-import service5 from "@/assets/service-5.jpeg";
-import service6 from "@/assets/service-6.jpeg";
+import inner1 from "@/assets/categories/inner-1.png";
+import inner2 from "@/assets/categories/inner-2.png";
+import inner3 from "@/assets/categories/inner-3.png";
+import kids1 from "@/assets/categories/kids-1.png";
+import kids2 from "@/assets/categories/kids-2.png";
+import kids3 from "@/assets/categories/kids-3.png";
+import man1 from "@/assets/categories/men-1.png";
+import man2 from "@/assets/categories/men-2.png";
+import man3 from "@/assets/categories/men-3.png";
+import man4 from "@/assets/categories/men-4.png";
+import man5 from "@/assets/categories/men-5.png";
+import man6 from "@/assets/categories/men-6.png";
+import women1 from "@/assets/categories/women-1.png";
+import women2 from "@/assets/categories/women-2.png";
+import women3 from "@/assets/categories/women-3.png";
+import women4 from "@/assets/categories/women-4.png";
+import women5 from "@/assets/categories/women-5.png";
+import women6 from "@/assets/categories/women-6.png";
 
 const categories = [
   {
@@ -18,7 +27,7 @@ const categories = [
     desc: "Shirts, trousers, jackets, formal & casual wear",
     emoji: "👔",
     color: "from-blue-900/50 to-blue-800/30",
-    images: [carousel1, service1, service3],
+    images: [man1, man2, man3, man4, man5, man6],
     tags: ["Formal Shirts", "Trousers", "Denim Jackets", "Polo Shirts"],
   },
   {
@@ -26,7 +35,7 @@ const categories = [
     desc: "Tops, dresses, blouses, activewear & fashion garments",
     emoji: "👗",
     color: "from-rose-900/50 to-rose-800/30",
-    images: [carousel2, service2, service5],
+    images: [women1, women2, women3, women4, women5, women6],
     tags: ["Dresses", "Blouses", "Activewear", "Knitwear"],
   },
   {
@@ -34,7 +43,7 @@ const categories = [
     desc: "Comfortable, safe, and playful clothing for children",
     emoji: "🧒",
     color: "from-amber-900/50 to-amber-800/30",
-    images: [carousel3, service4, service6],
+    images: [kids1, kids2, kids3],
     tags: ["T-Shirts", "Pyjamas", "School Uniform", "Outerwear"],
   },
   {
@@ -42,7 +51,7 @@ const categories = [
     desc: "Underwear, loungewear, sleepwear & essentials",
     emoji: "🧺",
     color: "from-teal-900/50 to-teal-800/30",
-    images: [service3, service5, carousel1],
+    images: [inner1, inner2, inner3],
     tags: ["Underwear", "Loungewear", "Sleepwear", "Essentials"],
   },
 ];
